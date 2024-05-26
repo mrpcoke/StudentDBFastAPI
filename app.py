@@ -2,10 +2,17 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import mysql.connector
 '''
-Student DB FastAPI App written by 
-Paul E. Coke (c)2024
+ Student DB FastAPI App
+ Created and written
+ by Paul E. Coke (c)2024
+
+ This app was created using the XAMPP stack 
+ with a simple mysql backend database with a "students" table,
+ containging 3 fields namely id, name and age. All routes were 
+ tested using the "Postman" application. 
 
 '''
+
 try:
     mydb = mysql.connector.connect(
 
